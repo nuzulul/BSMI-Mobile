@@ -66,5 +66,5 @@ plugins/
 platforms/
 .history/
 .vscode/
-buildandroiddebug.bat
-buildandroidrelease.bat
+app-release-unsigned.apk
+app-debug.apk
