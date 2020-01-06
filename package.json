@@ -30,6 +30,7 @@
         "cordova-plugin-vibration": "^3.1.1",
         "cordova-plugin-whitelist": "^1.3.3",
         "integrator-cordova-plugin-downloader": "^1.1.0",
+        "onesignal-cordova-plugin": "2.8.1",
         "phonegap-plugin-barcodescanner": "8.1.0",
         "phonegap-plugin-local-notification": "^1.0.1"
     },
@@ -56,7 +57,8 @@
             "cordova-plugin-app-version": {},
             "cordova-plugin-market": {},
             "cordova-plugin-vibration": {},
-            "integrator-cordova-plugin-downloader": {}
+            "integrator-cordova-plugin-downloader": {},
+            "onesignal-cordova-plugin": {}
         },
         "platforms": [
             "android"
