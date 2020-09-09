@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.sourceforge.bsmi" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.sourceforge.bsmi" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>BSMI Mobile</name>
     <description>
         Aplikasi yang diperuntukkan bagi relawan kemanusian, selamatkan satu jiwa sambung seribu asa.
@@ -15,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="https://bsmimobile.netlify.com" />
+    <allow-navigation href="https://bsmimobile.netlify.app" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
