@@ -1,3 +1,4 @@
+call cordova telemetry off
 call cordova platform remove android
 call cordova platform add android
 rem call cordova prepare
