@@ -23,7 +23,7 @@ function clickBody() {
 document.body.addEventListener("click", clickBody);
  
 function checkConnection() {
-     var networkState = navigator.network.connection.type;
+     var networkState = navigator.connection.type;
      var states = {};
      states[Connection.UNKNOWN]  = 'Unknown connection';
      states[Connection.ETHERNET] = 'Ethernet connection';
@@ -67,7 +67,7 @@ var app = {
                 navigator.notification.alert('No connection');
             } else {
             //
-                var xhttp = new XMLHttpRequest();
+                /* var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                   console.log(this.responseText);
@@ -77,7 +77,8 @@ var app = {
                 };
                 xhttp.open("GET", window.atob("aHR0cHM6Ly9ic21pbW9iaWxlLm5ldGxpZnkuYXBwL2NvbmVjdC5odG1s") + "?date=" + new Date().getTime(), true);
                 xhttp.send();
-                setTimeout(function () {aftercommand();}, 1000);
+                setTimeout(function () {aftercommand();}, 1000); */
+                window.location.replace(window.atob('aHR0cHM6Ly9ic21pbW9iaWxlLm5ldGxpZnkuYXBwL2luZGV4Lmh0bWw='));
             }
     },
 
