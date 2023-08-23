@@ -23,13 +23,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="android-targetSdkVersion" value="33" />
     <preference name="AndroidLaunchMode" value="singleInstance" />
     <platform name="android">
-      <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-          <application android:usesCleartextTraffic="true" />
-      </edit-config>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
     </platform>
     <platform name="android">
         <icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
@@ -38,16 +38,16 @@
         <icon density="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
-				<resource-file src="res/notification_icon/drawable-mdpi/notification_icon.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
-				<resource-file src="res/notification_icon/drawable-hdpi/notification_icon.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
-				<resource-file src="res/notification_icon/drawable-xhdpi/notification_icon.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
-				<resource-file src="res/notification_icon/drawable-xxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
-				<resource-file src="res/notification_icon/drawable-xxxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
-				<resource-file src="res/notification/drawable-mdpi/notification.png" target="app/src/main/res/drawable-mdpi/notification.png" />
-				<resource-file src="res/notification/drawable-hdpi/notification.png" target="app/src/main/res/drawable-hdpi/notification.png" />
-				<resource-file src="res/notification/drawable-xhdpi/notification.png" target="app/src/main/res/drawable-xhdpi/notification.png" />
-				<resource-file src="res/notification/drawable-xxhdpi/notification.png" target="app/src/main/res/drawable-xxhdpi/notification.png" />
-				<resource-file src="res/notification/drawable-xxxhdpi/notification.png" target="app/src/main/res/drawable-xxxhdpi/notification.png" />
+        <resource-file src="res/notification_icon/drawable-mdpi/notification_icon.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
+        <resource-file src="res/notification_icon/drawable-hdpi/notification_icon.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
+        <resource-file src="res/notification_icon/drawable-xhdpi/notification_icon.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
+        <resource-file src="res/notification_icon/drawable-xxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
+        <resource-file src="res/notification_icon/drawable-xxxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
+        <resource-file src="res/notification/drawable-mdpi/notification.png" target="app/src/main/res/drawable-mdpi/notification.png" />
+        <resource-file src="res/notification/drawable-hdpi/notification.png" target="app/src/main/res/drawable-hdpi/notification.png" />
+        <resource-file src="res/notification/drawable-xhdpi/notification.png" target="app/src/main/res/drawable-xhdpi/notification.png" />
+        <resource-file src="res/notification/drawable-xxhdpi/notification.png" target="app/src/main/res/drawable-xxhdpi/notification.png" />
+        <resource-file src="res/notification/drawable-xxxhdpi/notification.png" target="app/src/main/res/drawable-xxxhdpi/notification.png" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
@@ -75,7 +75,4 @@
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <plugin name="cordova-plugin-file" spec="^4.3.3" />
-    <plugin name="phonegap-plugin-barcodescanner" spec="8.1.0">
-        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
-    </plugin>
 </widget>
