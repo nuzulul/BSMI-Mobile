@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.sourceforge.bsmi" version="2.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.sourceforge.bsmi" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>BSMI Mobile</name>
     <description>
         Aplikasi yang diperuntukkan bagi relawan kemanusian, selamatkan satu jiwa sambung seribu asa.
     </description>
-    <author email="narojilstudio at gmail.com" href="https://narojil.github.io">
+    <author email="narojilstudio@gmail.com" href="https://narojilstudio.github.io">
         Narojil
     </author>
     <content src="index.html" />
