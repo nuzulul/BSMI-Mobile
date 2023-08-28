@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.sourceforge.bsmi" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.sourceforge.bsmi" version="3.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>BSMI Mobile</name>
     <description>
         Aplikasi yang diperuntukkan bagi relawan kemanusian, selamatkan satu jiwa sambung seribu asa.
     </description>
     <author email="narojilstudio@gmail.com" href="https://narojilstudio.github.io">
-        Narojil
+        Narojil Studio
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -30,6 +30,9 @@
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <config-file parent="./" target="app/src/main/AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+        </config-file>
     </platform>
     <platform name="android">
         <preference name="SplashMaintainAspectRatio" value="true"/>
@@ -78,4 +81,10 @@
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <plugin name="cordova-plugin-file" spec="^4.3.3" />
+    <plugin name="ionic-plugin-deeplinks" spec="^1.0.24">
+        <variable name="URL_SCHEME" value="bsmimobile" />
+        <variable name="DEEPLINK_SCHEME" value="https" />
+        <variable name="DEEPLINK_HOST" value="bsmimobile.press.my.id" />
+        <variable name="ANDROID_PATH_PREFIX" value="/" />
+    </plugin>
 </widget>

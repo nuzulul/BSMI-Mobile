@@ -68,3 +68,4 @@ platforms/
 .vscode/
 app-release-unsigned.apk
 app-debug.apk
+*.apk
