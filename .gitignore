@@ -64,6 +64,7 @@ typings/
 data/
 plugins/
 platforms/
+simulation/
 .history/
 .vscode/
 app-release-unsigned.apk
